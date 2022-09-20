@@ -9,17 +9,6 @@ body{
     font-family: 'Aref Ruqaa Ink', serif;
     color: white;
 }
-/* .main{
-    top: 5000px;
-} */
-
-/*.video{
-    width: 100;
-}
-
-.relat{
-    position: relative;
-}*/
 
 .absol{
     width: 50%;
@@ -128,14 +117,84 @@ li>a{
 
 .footer2{
     width: 100%;
+    background-color: rgba(247, 242, 242, 0.178);
 }
 
 .datos{
     float: right;
 }
+/* carrito */
+.aside{
+    background-color: rgba(12, 8, 8, 0.473);
+}
 
-aside{
-    background-color: rgba(12, 8, 8, 0.473);;
+.row{
+    width: 50%;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+/* Scrolbar color*/
+section::-webkit-scrollbar {
+    width: 12px;
+}
+
+section::-webkit-scrollbar-track {
+    background: rgba(12, 8, 8, 0.473);
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+/*gracias*/
+.animacion{
+    float: right;
+    width: 25%;
+    font-size: 2rem;
+}
+
+.div {
+    overflow:hidden;
+}
+
+.div:first-of-type {
+    animation: showup 7s infinite;
+}
+
+.div:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+}
+
+.div:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
 }
 /* modal */
 .modal {
@@ -149,10 +208,9 @@ aside{
     height: 100%; /* Algura completa */
     overflow: auto; /* Se activará el scroll si es necesario */
     background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
-  }
-  
-  /* Ventana o caja modal */
-  .contenido-modal {
+}
+
+.contenido-modal {
     position: relative; /* Relativo con respecto al contenedor -modal- */
     background-color: black;
     margin: auto; /* Centrada */
@@ -162,33 +220,33 @@ aside{
     -webkit-animation-duration: 0.5s;
     animation-name: animarsuperior;
     animation-duration: 0.5s
-  }
-  
-  /* Animación */
-  @-webkit-keyframes animatetop {
+}
+
+/* Animación */
+@-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
-  }
-  
-  @keyframes animarsuperior {
+}
+
+@keyframes animarsuperior {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
-  }
-  
-  /* Botón cerrar */
-  .close {
+}
+
+/* Botón cerrar */
+.close {
     color: black;
     float: right;
     font-size: 30px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /* contactenos */
 .form {

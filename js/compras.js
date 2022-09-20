@@ -127,3 +127,5 @@ function vaciarCarrito() {
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 renderizarProductos();
 renderizarCarrito();
+
+//Firma
