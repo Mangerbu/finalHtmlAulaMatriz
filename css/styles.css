@@ -6,6 +6,8 @@ body{
     background-color: black;
     background-image: url("../img/fondo.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Aref Ruqaa Ink', serif;
     color: white;
 }
@@ -14,7 +16,7 @@ body{
     width: 50%;
 }
 
-.img{
+.img, .img1{
     width: 100%;
 }
 
@@ -54,7 +56,7 @@ li>a{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.750);
     display: inline-block;
-    margin: 0.1px;
+    margin: 2px;
 }
 
 .img-card {
@@ -80,7 +82,7 @@ li>a{
     width: 70%;
     overflow-x: auto;
     white-space: nowrap;
-    display: block;
+    display: flex;
     border: 1px #c0c0c0 solid;
     border-radius: 5px;
     scrollbar-color: dark;
@@ -222,7 +224,7 @@ section::-webkit-scrollbar-thumb {
     animation-duration: 0.5s
 }
 
-/* Animación */
+/* modal Animación */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
@@ -233,7 +235,7 @@ section::-webkit-scrollbar-thumb {
     to {top:0; opacity:1}
 }
 
-/* Botón cerrar */
+/* modal Botón cerrar */
 .close {
     color: black;
     float: right;
@@ -284,30 +286,92 @@ label.error {
 .lista.error {
     border: red 1px solid;
 }
-
+/* celular */
 @media (max-width: 600px){
+    body{
+        background-image: url("../img/large.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Aref Ruqaa Ink', serif;
+        font-size: 0.75rem;
+        color: white;
+    }
+    .nav, .footer1{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
     .container-ajax {
         margin-top: 2rem;
         width: 100%;
-        background-color: hotpink;
-        /* padding: 2rem; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 3rem 1rem;
-        /* row-gap: 3rem; */
         justify-content: center;
-        /* flex-flow: row wrap; */
         align-items: stretch;
+    }
+    .parrafo1, .parrafo2{
+        width: 100%;
     }
 
     .card {
         width: 80%;
         border: 1px #c0c0c0 solid;
         border-radius: 5px;
-        background-color: rgb(57, 57, 214);
-        /* display: inline-block; */
-        /* margin: 15px */
+    }
+    .reparto{
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
+        /* flex-direction: row;
+        gap: 0.4px;
+        justify-content: space-between;
+        align-items: stretch; */
+    }
+    
+    .info {
+        float: none;
+        width: 100%;
+        height: 500px;
+        white-space: nowrap;
+        display: block;
+    }
+    .img {
+        width: 100%;
+        max-width: 75px;
+    }
+    .img1 {
+        width: 100%;
+        max-width: 220px;
+    }
+    .card {
+        width: 35%;
+    }
+    .card2{
+        margin: 0.5rem;
+    }
+    /* contactenos */
+    .form {
+        margin: 0.1rem;
+        width: 100%;
+        min-width: 350px;
+    }
+    /*gracias*/
+    .animacion{
+        width: 0%;
+        font-size: 0%;
+    }
+    /* compras */
+    .row{
+        width: 100%;
+    }
+    /* crypto */
+    .datos{
+        float: none;
     }
 
 }

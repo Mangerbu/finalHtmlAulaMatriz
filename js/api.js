@@ -10,10 +10,9 @@ $(document).ready(function() {
                 const card = `
                     <div class="card">
                         <div class="img-card">
-                            <img src="${usr.imageUrl}" alt="${usr.firstName}" class="img">
+                            <img src="${usr.imageUrl}" alt="${usr.firstName}" class="img1">
                         </div>
                         <div class="info-card">
-                        <button class="abrirModa" value="${usr.id}">${usr.firstName}</button>
                             <p>${usr.firstName}</p>
                             <p>${usr.lastName}</p>
                         </div>
@@ -77,5 +76,27 @@ $(document).ready(function() {
         }
     });
 
-    
+    $("#abrirModa").on('click', function(event) {
+        alert("Submit button is clicked!");
+        event.preventDefault();
+    });
+
 });
+
+// Modal
+var modal = document.getElementById("ventanaModal");
+var boton = document.getElementById("abrirModa");
+var span = document.getElementsByClassName("cerrar")[0];
+boton.addEventListener("click",function() {
+  modal.style.display = "block";
+});
+
+span.addEventListener("click",function() {
+  modal.style.display = "none";
+});
+window.addEventListener("click",function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+    

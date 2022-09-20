@@ -4,7 +4,7 @@ const baseDeDatos = [
         id: 1,
         nombre: 'Canción de hielo y fuego I',
         precio: 126608,
-        imagen: '../img/libro1.webp'
+        imagen: '../img/libro2.webp'
     },
     {
         id: 2,
