@@ -4,7 +4,7 @@ $(document).ready(function() {
         url: 'https://thronesapi.com/api/v2/Characters',
         success: function(res) {
             resultado = res;
-            /* console.log('data :>> ', res); */
+            console.log('data :>> ', res);
             let cards = '';
             res.forEach(usr => {
                 const card = `
@@ -13,7 +13,9 @@ $(document).ready(function() {
                             <img src="${usr.imageUrl}" alt="${usr.firstName}" class="img">
                         </div>
                         <div class="info-card">
-                            <h5>${usr.fullName}</h5>
+                        <button class="abrirModa" value="${usr.id}">${usr.firstName}</button>
+                            <p>${usr.firstName}</p>
+                            <p>${usr.lastName}</p>
                         </div>
                     </div>`;
                 cards += card;
@@ -31,12 +33,15 @@ $(document).ready(function() {
         url: 'https://api.got.show/api/show/episodes',
         success: function(res) {
             resultado = res;
-            console.log('data :>> ', res);
+            /* console.log('data :>> ', res); */
             let cards = '<h4 align="center">EPISODIOS</h4>';
             res.forEach(usr => {
                 const card = `
                     <div class="card2">
-                        <div>
+                        <div class="relat">
+                            <img src="img/capitulos.jpg" alt="" class="img">
+                        </div>
+                        <div class="absol">
                             <h4>Titulo: ${usr.title}</h4>
                             <h5>Temporada: ${usr.season}</h5>
                             <h5>Episodio: ${usr.episode}</h5>
@@ -71,4 +76,6 @@ $(document).ready(function() {
             }
         }
     });
+
+    
 });

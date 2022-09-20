@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,18 +18,23 @@
     <script src="/js/app.js" defer></script>
     <script src="/js/api.js" defer></script>
 </head>
-
 <body>
     <header class="header">
         <nav class="nav">
             <li><a href="index.html" >INICIO</a>
-            <li><a href="nosotros.html" >NOSOTROS</a>
             <li><a href="compras.html" >COMPRAS</a>
             <li><a href="contactenos.html">CONTACTENOS</a>
         </nav>
-        <h1 align="center">GAME OF THRONES</h1>
+        <img src="img/Logo.png" alt="" width="20%" class="logo">
+        <img src="img/logo dragon 3.png" alt="" width="7%" class="dragon">
     </header>
+    <hr>
+    <hr>
+    <hr>
     <main class="main">
+        <div>
+            <video src="video/Got  intro.mp4" autoplay="true" muted="true" loop="true" width="100%"></video>
+        </div>
         <section class="info">
 
         </section>
@@ -40,6 +44,7 @@
                 Pero en una tierra donde las estaciones pueden durar toda la vida, se acerca el invierno... y más allá de la Gran Muralla que los protege, un mal olvidado ha regresado. 
                 HBO presenta esta serie épica basada en la serie de libros Canción de Hielo y Fuego de George R.R. Martin.
             </P>
+            <img src="img/Dragons.webp" alt="" width="100%">
         </section>
         <h3>Reparto</h3>
         <section class="reparto">            
@@ -58,17 +63,27 @@
                 estudios en distintos países.
             </P>
         </section>
+        <section>
+            <h2>Ventana modal</h2>
+            <button id="abrirModal">Abrir Modal</button>
+            <!-- Ventana modal, por defecto no visiblel -->
+            <div id="ventanaModal" class="modal">
+                <div class="contenido-modal">
+                    <span class="cerrar">&times;</span>
+                    <h2>Ventana modal</h2>
+                    <p>Esto es el texto de la ventana</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer1">
-        <div>
-            <h3>Nuestras Redes</h3>
-            <ul>
-                <li><img src="img/facebook.png" width="2%"><a href="https://www.facebook.com" >Facebook</a></li>
-                <li><img src="img/twitter.png" width="2%"><a href="https://www.twitter.com/GameOfThrones/" >Twitter</a></li>
-                <li><img src="img/instagram.png" width="2%"><a href="https://www.instagram.com" >Instagram</a></li>
-            </ul>
+    <footer class="footer">
+        <h3>Redes Sociales</h3>
+        <div class="footer1">
+            <li><img src="img/facebook.png" width="6%"><a href="https://www.facebook.com/GameOfThrones" target="_blank">Facebook</a></li>
+            <li><img src="img/twitter.png" width="9%"><a href="https://www.twitter.com/GameOfThrones" target="_blank">Twitter</a></li>
+            <li><img src="img/instagram.png" width="6%"><a href="https://www.instagram.com/gameofthrones" target="_blank">Instagram</a></li>
         </div>
-        <div class="footer">
+        <div class="footer2">
             <address align="center">&copy; Todos los Derechos reservados - Desarrollado por MGBU </address>
         </div>
     </footer>

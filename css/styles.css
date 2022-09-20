@@ -9,8 +9,39 @@ body{
     font-family: 'Aref Ruqaa Ink', serif;
     color: white;
 }
+/* .main{
+    top: 5000px;
+} */
 
-.nav{
+/*.video{
+    width: 100;
+}
+
+.relat{
+    position: relative;
+}*/
+
+.absol{
+    width: 50%;
+}
+
+.img{
+    width: 100%;
+}
+
+.list-group-item{
+    background-color: rgba(0, 0, 0, 0.900);
+}
+
+.logo{
+    align-content: center;
+}
+
+.dragon{
+    float: right;
+}
+
+.nav, .footer1{
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -27,13 +58,9 @@ li>a{
     color: aliceblue;
 }
 
-.main{
-    padding-top: 120px;
-}
-
 /* targetas */
 .card {
-    width: 100px;
+    width: 120px;
     border: 1px #c0c0c0 solid;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.750);
@@ -42,7 +69,7 @@ li>a{
 }
 
 .img-card {
-    width: 80px;
+    width: 100%;
     margin: 1px auto;
     background-color: black;
 }
@@ -54,6 +81,9 @@ li>a{
 
 .info-card {
     margin: 1px;
+    width:100px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .reparto{
@@ -64,6 +94,7 @@ li>a{
     display: block;
     border: 1px #c0c0c0 solid;
     border-radius: 5px;
+    scrollbar-color: dark;
     /* flex-direction: row;
     gap: 0.4px;
     justify-content: space-between;
@@ -74,7 +105,7 @@ li>a{
     background-color: rgba(247, 242, 242, 0.178);
     float: right;
     width: 30%;
-    height: 500px;
+    height: 1300px;
     overflow-y: auto;
     border: 1px #c0c0c0 solid;
     border-radius: 5px;
@@ -85,6 +116,7 @@ li>a{
     border: 1px #c0c0c0 solid;
     border-radius: 5px;
     margin: 1rem;
+    display: flex;
 }
 
 .parrafo1, .parrafo2{
@@ -94,9 +126,70 @@ li>a{
     border-radius: 5px;
 }
 
-.footer1{
+.footer2{
     width: 100%;
 }
+
+.datos{
+    float: right;
+}
+
+aside{
+    background-color: rgba(12, 8, 8, 0.473);;
+}
+/* modal */
+.modal {
+    display: none; /* Por defecto, estará oculto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+  }
+  
+  /* Ventana o caja modal */
+  .contenido-modal {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: black;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+  }
+  
+  /* Animación */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* Botón cerrar */
+  .close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 /* contactenos */
 .form {
     background-color: rgba(247, 242, 242, 0.178);

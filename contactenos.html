@@ -11,23 +11,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="/js/app.js" defer></script>
     <script src="/js/api.js" defer></script>
 </head>
-
 <body>
     <header class="header">
         <nav class="nav">
             <li><a href="index.html" >INICIO</a>
-            <li><a href="nosotros.html" >NOSOTROS</a>
             <li><a href="compras.html" >COMPRAS</a>
             <li><a href="contactenos.html">CONTACTENOS</a>
         </nav>
-        <h1 align="center">CONTACTENOS</h1>
+        <img src="img/Logo.png" alt="" width="20%" class="logo">
+        <img src="img/logo dragon 3.png" alt="" width="7%" class="dragon">
     </header>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
     <main class="main">
+        <hr>
+        <hr>
+        <hr>
+        <h1 align="center">CONTACTENOS</h1>
         <form action="" method="post" class="form">
             <legend class="mensaje">Por favor llena los siguientes campos:</legend>
             <p class="fieldset">
@@ -44,7 +55,7 @@
                 <input type="date" id="nacimiento" name="nacimientos" class="form-input" required>
             </p>
             <p>
-                <label for="nuevo" class="label">Usuario Nuevo?:</label>
+                <label for="nuevo" class="label">Desea recibir noticias?:</label>
                 <input type="checkbox" name="nuevos" id="nuevo">
             </p>
             <p>
@@ -67,20 +78,18 @@
                 <textarea id="comentarios" required name="comentarios" class="form-input" placeholder="Escribe tu Comentario" maxlength="5000"></textarea>
             </p>
             <p>
-                <button type="submit" class="submit">Crear Usuario</button>
+                <button type="submit" class="submit">Enviar</button>
             </p>
         </form>
     </main>
-    <footer class="footer1">
-        <div>
-            <h3>Nuestras Redes</h3>
-            <ul>
-                <li><img src="img/facebook.png" width="2%"><a href="https://www.facebook.com" >Facebook</a></li>
-                <li><img src="img/twitter.png" width="2%"><a href="https://www.twitter.com/GameOfThrones/" >Twitter</a></li>
-                <li><img src="img/instagram.png" width="2%"><a href="https://www.instagram.com" >Instagram</a></li>
-            </ul>
+    <footer class="footer">
+        <h3>Redes Sociales</h3>
+        <div class="footer1">
+            <li><img src="img/facebook.png" width="6%"><a href="https://www.facebook.com/GameOfThrones" target="_blank">Facebook</a></li>
+            <li><img src="img/twitter.png" width="9%"><a href="https://www.twitter.com/GameOfThrones" target="_blank">Twitter</a></li>
+            <li><img src="img/instagram.png" width="6%"><a href="https://www.instagram.com/gameofthrones" target="_blank">Instagram</a></li>
         </div>
-        <div class="footer">
+        <div class="footer2">
             <address align="center">&copy; Todos los Derechos reservados - Desarrollado por MGBU </address>
         </div>
     </footer>
